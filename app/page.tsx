@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+export const runtime = 'experimental-edge'; // 'nodejs' is the default
+export const preferredRegion = 'iad1'; // only execute this function on iad1
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
